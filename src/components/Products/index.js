@@ -18,11 +18,49 @@ export const ProductsList = () => {
                     <p>categoria</p>
                     <p className="price">$320</p>
                 </div>
-                <div className="button">
+                <div className="buttom">
                     <button className="btn">Añadir al carrito </button>
+                    <div>
+                        <a href="#" className="btn">Vista</a>
+                    </div>
                 </div>
-                <div>
-                    <a href="#" className="btn">Vista</a>
+            </div>
+
+            <div className="producto">
+                <a href="">
+                    <div className="producto_img">
+                        <img src={Img} alt="img" width="200px" />
+                    </div>
+                </a>
+                <div className="producto_footer">
+                    <h1>title</h1>
+                    <p>categoria</p>
+                    <p className="price">$320</p>
+                </div>
+                <div className="buttom">
+                    <button className="btn">Añadir al carrito </button>
+                    <div>
+                        <a href="#" className="btn">Vista</a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="producto">
+                <a href="">
+                    <div className="producto_img">
+                        <img src={Img} alt="img" width="200px" />
+                    </div>
+                </a>
+                <div className="producto_footer">
+                    <h1>title</h1>
+                    <p>categoria</p>
+                    <p className="price">$320</p>
+                </div>
+                <div className="buttom">
+                    <button className="btn">Añadir al carrito </button>
+                    <div>
+                        <a href="#" className="btn">Vista</a>
+                    </div>
                 </div>
             </div>
         </div>

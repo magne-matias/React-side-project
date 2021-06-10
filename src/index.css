@@ -117,6 +117,90 @@ header .cart span{
   border-radius: 12px;
 }
 
+.producto:hover{
+  border: 6px solid #08a05c55;
+}
+
+.producto_img img{
+  width: 310px;
+}
+
+.producto_footer{
+  padding: 1rem;
+}
+
+.producto_footer h1{
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #1a202c;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.producto_footer p{
+  font-weight: 700;
+  color: rgba(0, 0, 0, .555);
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.producto_footer .price{
+  font-size: 2rem;
+  color: #1a202c;
+}
+
+.producto .buttom{
+  width: 100%;
+  height: 45px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem 2rem;
+}
+
+.buttom .btn{
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.buttom button{
+  background-color: #3033d3;
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.buttom div{
+  background-color:#08a05c ;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  margin-left: -2rem;
+  border-radius: 5px;
+}
+
+.buttom div a{
+  color: #fff;
+  font-weight: 700;
+}
+
+.buttom div a:hover{
+  color: #fff;/*para que no cambie luego del click*/
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*-----------------------MEDIA QUERY--------------------------*/
