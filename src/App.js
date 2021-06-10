@@ -1,10 +1,15 @@
 import React from "react";
+import {Header} from "./components/Header"
+import {ProductsList} from "./components/Products/index"
+import 'boxicons';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hola Mundo</h1>
+      <Header/>
+      <ProductsList/>
     </div>
+    
   );
 }
 
