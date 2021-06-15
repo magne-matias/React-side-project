@@ -1,5 +1,7 @@
 import React from 'react'
 import logo from "../../images/logo1.png"
+import {Link} from 'react-router-dom'
+
 
 
 export const Header = () => {
@@ -8,17 +10,19 @@ export const Header = () => {
         <div className="menu">
           <box-icon name="menu"></box-icon>
         </div>
-        <a href="#">
+        
+        <Link to="">
             <div className="logo">
                 <img src={logo} alt="logo" width="100px"/>
             </div>
-        </a>
+        </Link>
+        
         <ul>
             <li>
-                <a href="#">Inicio</a>
+                <Link to="#">Inicio</Link>
             </li>
             <li>
-                <a href="#">Productos</a>
+                <Link to="#">Productos</Link>
             </li>
         </ul>
         <div className="cart">
