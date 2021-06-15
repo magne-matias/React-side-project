@@ -11,7 +11,7 @@ export const Header = () => {
           <box-icon name="menu"></box-icon>
         </div>
         
-        <Link to="">
+        <Link to="/">
             <div className="logo">
                 <img src={logo} alt="logo" width="100px"/>
             </div>
@@ -19,10 +19,10 @@ export const Header = () => {
         
         <ul>
             <li>
-                <Link to="#">Inicio</Link>
+                <Link to="/">Inicio</Link>
             </li>
             <li>
-                <Link to="#">Productos</Link>
+                <Link to="/productos">Productos</Link>
             </li>
         </ul>
         <div className="cart">
