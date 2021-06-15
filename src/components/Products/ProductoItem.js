@@ -2,13 +2,14 @@ import React from 'react'
 import Img from "../../images/g1.jpg"
 
 
-export const  ProductoItem=(
+export const  ProductoItem=({
     id,
     title,
     price,
     image,
     category
-)=> {
+}
+    )=> {
     return (
         <div className="producto">
                 <a href="#">
