@@ -3,7 +3,7 @@ import {Header} from "./components/Header"
 import 'boxicons';
 
 import {BrowserRouter as Route} from "react-router-dom"
-import Paginas from './components/Pages'
+import Pages from './components/Pages'
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Route>
         <Header/>
-        <Paginas/>
+        <Pages/>
       </Route>
     </div>
     
