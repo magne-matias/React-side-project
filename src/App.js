@@ -4,17 +4,20 @@ import 'boxicons';
 
 import {BrowserRouter as Router} from "react-router-dom"
 import {Pages} from './components/Pages'
+import {DataProvider} from './context/DataProvider'
 
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Header/>
-        <Pages/>
-      </Router>
-    </div>
-    
+
+    <DataProvider>
+      <div className="App">
+        <Router>
+          <Header/>
+          <Pages/>
+        </Router>
+      </div>
+    </DataProvider>
   );
 }
 

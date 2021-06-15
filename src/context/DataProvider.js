@@ -1,5 +1,5 @@
 import React,{useState, useEffect, createContext} from 'react'
-import Data from 'Data.js'
+import Data from '../Data'
 export const DataContext =createContext();
 
 export const DataProvider=(props)=>{
@@ -7,6 +7,17 @@ export const DataProvider=(props)=>{
 
     useEffect(() =>{
         const producto = Data
+        setProdcutos(producto)
     },[])
+
+    const value ={
+        productos:[productos]
+    }
+
+    return(
+        <DataContext.Provider value ={value}>
+            {props.children}
+        </DataContext.Provider>
+    )
 }
 
