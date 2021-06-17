@@ -16,8 +16,8 @@ function App() {
       <div className="App">
         <Router>
           <Header/>
-          <Pages/>
           <Carrito/>
+          <Pages/>
         </Router>
       </div>
     </DataProvider>
