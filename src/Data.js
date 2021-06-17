@@ -1,4 +1,4 @@
-const data={
+const Data = {
     status:"success",
     items:[
         {
@@ -7,7 +7,7 @@ const data={
             price:400,
             image: require('./images/g1.jpg'),
             category:"new",
-            cantidad: 1
+            cantidad: 1,
         },
         {
             id:1,
@@ -15,7 +15,7 @@ const data={
             price:400,
             image: require('./images/g2.jpg'),
             category:"new",
-            cantidad: 1
+            cantidad: 1,
         },
         {
             id:3,
@@ -23,7 +23,7 @@ const data={
             price:400,
             image: require('./images/g3.jpg'),
             category:"new",
-            cantidad: 1
+            cantidad: 1,
         },
         {
             id:4,
@@ -31,7 +31,7 @@ const data={
             price:400,
             image: require('./images/g4.jpg'),
             category:"new",
-            cantidad: 1
+            cantidad: 1,
         },
         {
             id:5,
@@ -39,7 +39,7 @@ const data={
             price:400,
             image: require('./images/g5.jpg'),
             category:"new",
-            cantidad: 1
+            cantidad: 1,
         },
         {
             id:6,
@@ -47,7 +47,7 @@ const data={
             price:400,
             image: require('./images/g6.jpg'),
             category:"new",
-            cantidad: 1
+            cantidad: 1,
         },
         {
             id:7,
@@ -55,7 +55,7 @@ const data={
             price:400,
             image: require('./images/g7.jpg'),
             category:"new",
-            cantidad: 1
+            cantidad: 1,
         },
         {
             id:8,
@@ -63,7 +63,9 @@ const data={
             price:400,
             image: require('./images/g8.jpg'),
             category:"new",
-            cantidad: 1
+            cantidad: 1,
         }
     ]
 }
+
+export default Data;

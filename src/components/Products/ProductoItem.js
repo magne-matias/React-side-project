@@ -1,5 +1,4 @@
 import React from 'react'
-import Img from "../../images/g1.jpg"
 
 
 export const  ProductoItem=({
@@ -8,13 +7,13 @@ export const  ProductoItem=({
     price,
     image,
     category
-}
-    )=> {
+})=> {
+    
     return (
         <div className="producto">
                 <a href="#">
                     <div className="producto_img">
-                        <img src={image} alt={title} width="200px" />
+                        <img src={image.default} alt={title} width="200px" />
                     </div>
                 </a>
                 <div className="producto_footer">

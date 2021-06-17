@@ -11,7 +11,6 @@ export const Pages = () => {
             <Switch>
                 <Route path="/" exact component={Inicio} />
                 <Route path="/productos" exact component={ProductsList} />
-                <Route/>
             </Switch>
         </section>
     )
