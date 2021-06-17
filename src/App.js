@@ -1,9 +1,11 @@
 import React from "react";
-import {Header} from "./components/Header"
 import 'boxicons';
-
 import {BrowserRouter as Router} from "react-router-dom"
+
 import {Pages} from './components/Pages'
+import {Header} from "./components/Header"
+import {Carrito} from './components/Carrito'
+
 import {DataProvider} from './context/DataProvider'
 
 
@@ -15,6 +17,7 @@ function App() {
         <Router>
           <Header/>
           <Pages/>
+          <Carrito/>
         </Router>
       </div>
     </DataProvider>
