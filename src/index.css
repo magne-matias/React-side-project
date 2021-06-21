@@ -357,8 +357,39 @@ header .cart span{
 
 
 /*-----------------------MEDIA QUERY--------------------------*/
+
+@media only screen and (max-width:1000px){
+  .carrito_item{
+    width: 92%;
+  }
+}
+
+@media only screen and (max-width:700px){
+  .carrito{
+    width: 100%;
+    height: 100%;
+    padding:1rem ;
+  }
+
+  .carrito_item h3{
+    font-size: 1.2rem;
+  }
+}
+
+
 @media only screen and (max-width:600px){
   header ul{
     display: none;
+  }
+}
+
+
+@media only screen and (max-width:450px){
+  .carrito_item h3 {
+    display: .5rem;
+  }
+  .carrito_item .remove_item box-icon{
+    width: 30px;
+    height: 70px;
   }
 }

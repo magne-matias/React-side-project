@@ -1,12 +1,24 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import Card from '../../images/g3.jpg'
 
+import {DataContext} from '../../context/DataProvider'
 
 export const Carrito =()=>{
+
+    const value = useContext(DataContext)
+    const [menu,setMenu] =value.menu
+
+    const tooglefalse =()=>{
+        setMenu(false);
+    }
+
+    const show1=menu ? "carritos show" : "carritos"
+    const show2= menu ? "carrito show" : "carrito"
+
     return(
-        <div className="carritos show">
-            <div className="carrito show">
-                <div className="carrito_close">
+        <div className={show1}>
+            <div className={show2}>
+                <div className="carrito_close" onClick={tooglefalse} >
                     <box-icon name="x"></box-icon>
                 </div>
                 <h2>Su carrito mi pana</h2>
@@ -14,7 +26,55 @@ export const Carrito =()=>{
                     <div className="carrito_item">
                         <img src={Card} alt=""/>
                         <div>
-                            <h3>title</h3>
+                            <h3>Guitar 1</h3>
+                            <p className="price">$350</p>
+                        </div>
+                        <div>
+                            <box-icon name="up-arrow" type="solid" ></box-icon>
+                            <p className="cantidad">1</p>
+                            <box-icon name="down-arrow" type="solid" ></box-icon>
+                        </div>
+                        <div className="remove_item">
+                            <box-icon name="trash"></box-icon>
+                        </div>
+                    </div>
+
+                    <div className="carrito_item">
+                        <img src={Card} alt=""/>
+                        <div>
+                            <h3>Guitar 1</h3>
+                            <p className="price">$350</p>
+                        </div>
+                        <div>
+                            <box-icon name="up-arrow" type="solid" ></box-icon>
+                            <p className="cantidad">1</p>
+                            <box-icon name="down-arrow" type="solid" ></box-icon>
+                        </div>
+                        <div className="remove_item">
+                            <box-icon name="trash"></box-icon>
+                        </div>
+                    </div>
+
+                    <div className="carrito_item">
+                        <img src={Card} alt=""/>
+                        <div>
+                            <h3>Guitar 1</h3>
+                            <p className="price">$350</p>
+                        </div>
+                        <div>
+                            <box-icon name="up-arrow" type="solid" ></box-icon>
+                            <p className="cantidad">1</p>
+                            <box-icon name="down-arrow" type="solid" ></box-icon>
+                        </div>
+                        <div className="remove_item">
+                            <box-icon name="trash"></box-icon>
+                        </div>
+                    </div>
+
+                    <div className="carrito_item">
+                        <img src={Card} alt=""/>
+                        <div>
+                            <h3>Guitar 1</h3>
                             <p className="price">$350</p>
                         </div>
                         <div>
