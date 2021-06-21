@@ -18,9 +18,26 @@ export const DataProvider=(props)=>{
         }
     },[])
 
+
+    const addCarrito=(id)=>{
+        const check=carrito.every(item=>{
+            return item.id !== id;
+        })
+        if(check){
+            const data = productos.filter(producto=>{
+                return producto.id === id
+            })
+            setCarrito([...carrito, ...data])
+        }else{
+            alert("el producto se ha añadido al carrito ")
+        }
+    }
+
     const value ={
         productos:[productos],
-        menu: [menu, setMenu]
+        menu: [menu, setMenu],
+        addCarrito: addCarrito,
+        carrito: [carrito, setCarrito]
     }
 
     return(
