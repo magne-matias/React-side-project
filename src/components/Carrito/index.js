@@ -13,8 +13,17 @@ export const Carrito =()=>{
         setMenu(false);
     }
 
-    const show1=menu ? "carritos show" : "carritos"
-    const show2= menu ? "carrito show" : "carrito"
+    const show1=menu ? "carritos show" : "carritos";
+    const show2= menu ? "carrito show" : "carrito";
+
+    const removeProducto= id=>{
+        if(window.confirm("quieres suspender el producto?")){
+            carrito.forEach((item,index)=>{
+                item.cantidad=1;
+                carrito.splice(index,1)
+            })
+        }
+    }
 
     return(
         <div className={show1}>
@@ -26,9 +35,9 @@ export const Carrito =()=>{
                 
                 <div className="carrito_center">
                     {
-                        carrito.map((producto)=>{
+                        carrito.map((producto)=>(
                             <div className="carrito_item">
-                                <img src={producto.images} alt=""/>
+                                <img src={producto.image.default} alt=""/>
                                 <div>
                                     <h3> {producto.title}</h3>
                                     <p className="price">${producto.price} </p>
@@ -38,11 +47,11 @@ export const Carrito =()=>{
                                     <p className="cantidad"> {producto.cantidad} </p>
                                     <box-icon name="down-arrow" type="solid" ></box-icon>
                                 </div>
-                                <div className="remove_item">
+                                <div className="remove_item" onClick={removeProducto(producto.id)} >
                                     <box-icon name="trash"></box-icon>
                                 </div>
                             </div>
-                        })
+                        ))
                     }
                 </div>
 
