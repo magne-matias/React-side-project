@@ -1,10 +1,19 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import logo from "../../images/logo1.png"
 import {Link} from 'react-router-dom'
-
+import {DataContext} from '../../context/DataProvider'
 
 
 export const Header = () => {
+
+    const value = useContext(DataContext)
+    const [menu,setMenu]= value.menu;
+
+    const toogleMenu=()=>{
+        setMenu(!menu)
+    }
+
+
     return (
         <header>
         <div className="menu">
@@ -25,7 +34,7 @@ export const Header = () => {
                 <Link to="/productos">Productos</Link>
             </li>
         </ul>
-        <div className="cart">
+        <div className="cart" onClick={toogleMenu} >
             <box-icon name="cart"></box-icon>
             <span className="item_total">0</span>
         </div>
