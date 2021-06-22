@@ -8,6 +8,7 @@ export const Carrito =()=>{
     const value = useContext(DataContext)
     const [menu,setMenu] =value.menu;
     const [carrito, setCarrito]=value.carrito;
+    const [total]=value.total;
 
     const tooglefalse =()=>{
         setMenu(false);
@@ -86,7 +87,7 @@ export const Carrito =()=>{
                 </div>
 
                 <div className="carrito_footer">
-                    <h3>total: $2353</h3>
+                    <h3>total: ${total}</h3>
                     <button className="btn" >Payment</button>
                 </div>
             </div>
