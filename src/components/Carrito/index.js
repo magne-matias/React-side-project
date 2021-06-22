@@ -32,7 +32,6 @@ export const Carrito =()=>{
             }
             setCarrito([...carrito])
         })
-        setCarrito([...carrito])
     }
 
 
@@ -43,11 +42,9 @@ export const Carrito =()=>{
                     item.cantidad=1;
                     carrito.splice(index,1)
                 }
-                item.cantidad=1;
-                carrito.splice(index,1)
             }
         )}
-        setCarrito(...carrito)
+        setCarrito([...carrito])
     }
 
     return(
@@ -76,7 +73,7 @@ export const Carrito =()=>{
                                 <div>
                                     <box-icon name="up-arrow" type="solid" onClick={()=> suma(producto.id)} ></box-icon>
                                     <p className="cantidad"> {producto.cantidad} </p>
-                                    <box-icon name="down-arrow" type="solid" onClick={()=> suma(producto.id)}></box-icon>
+                                    <box-icon name="down-arrow" type="solid" onClick={()=> resta(producto.id)}></box-icon>
                                 </div>
                                 <div className="remove_item" onClick={()=>  removeProducto(producto.id)} >
                                     <box-icon name="trash"></box-icon>
