@@ -1,4 +1,11 @@
 #Guitar-Hero-react
+ Para los iconos usamos boxicons
+ 
+ ##Instalacion
+ $ npm install boxicons --save
+ 
+ ##Importacion
+ import 'boxicons';
 
 # Getting Started with Create React App
 
